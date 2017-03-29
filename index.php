@@ -39,16 +39,20 @@ switch ($action) {
         // make sure the due date is after the invoice date
 
         // format both dates
-        $invoice_date_f = 'not implemented yet';
-        $due_date_f = 'not implemented yet'; 
+        $invoice_date_f = $invoice_date->format('F d, Y') ;
+        $due_date_f = $due_date->format('F d, Y') ; 
         
         // get the current date and time and format it
-        $current_date_f = 'not implemented yet';
-        $current_time_f = 'not implemented yet';
+        $current_date_f = new DateInterval()->format('F d, Y');
+        $current_time_f = new DateTime()->format('H:i:s a');
         
         // get the amount of time between the current date and the due date
+        
+        
+        
         // and format the due date message
-        $due_date_message = 'not implemented yet';
+        $due_date_message = 
+        echo 'This invoice is'. 'years,' . ',' . 'and' . 'days overdue.';
 
         break;
 }
